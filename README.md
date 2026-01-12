@@ -1,5 +1,5 @@
 # Android MVVM Architecture - Modern Approach
-[![Android Unit Test](https://github.com/fifocode/wimm-android-app/actions/workflows/android-unit-test.yml/badge.svg)](https://github.com/fifocode/wimm-android-app/actions/workflows/android-unit-test.yml)
+[![Android Unit Test](https://github.com/afteracademy/wimm-android-app/actions/workflows/android-unit-test.yml/badge.svg)](https://github.com/afteracademy/wimm-android-app/actions/workflows/android-unit-test.yml)
 
 ## WhereIsMyMotivation
 
@@ -55,7 +55,7 @@ Using this app can bring a little bit of happiness and energy to live an inspire
 
 ## Detailed Article on this project 
 Read this article to understand the project structure and concepts used:
-[Android MVVM Architecture for A Production Ready App](https://fifocode.com/article/android-mvvm-architecture-for-a-production-ready-app)
+[Android MVVM Architecture for A Production Ready App](https://afteracademy.com/article/android-mvvm-architecture-for-a-production-ready-app)
 
 ## Architecture
 ![Architecture](docs/assets/arch-comp.svg)
@@ -66,7 +66,7 @@ Read this article to understand the project structure and concepts used:
 ## Installation Instructions
 ```bash
 # clone the backend project wimm-apis used for this App
-git clone https://github.com/fifocode/wimm-apis.git --recursive
+git clone https://github.com/afteracademy/wimm-apis.git --recursive
 
 # goto the wimm-apis and run
 npm install
@@ -75,7 +75,7 @@ npm install
 docker-compose up -d
 
 # clone the wimm-android-app
-git clone https://github.com/fifocode/wimm-android-app.git
+git clone https://github.com/afteracademy/wimm-android-app.git
 
 # open wimm-android-app in Android Studio and run the app
 echo "Enjoy learning Modern Android Development - WhereIsMyMotivation :D"
@@ -102,15 +102,15 @@ Example
 - Run the Backend Project to power this App as mentioned below
 
 ## Supporting Backend Project
-The backend that powers this App is also open-sourced. You can find it here: [Modern Backend Development - WhereIsMyMotivation](https://github.com/fifocode/wimm-apis)
+The backend that powers this App is also open-sourced. You can find it here: [Modern Backend Development - WhereIsMyMotivation](https://github.com/afteracademy/wimm-apis)
 
 ## Find this project useful ? :heart:
 * Support it by clicking the :star: button on the upper right of this page. :v:
 
-## More on YouTube channel - fifocode
-Subscribe to the YouTube channel `fifocode` for understanding the concepts used in this project:
+## More on YouTube channel - AfterAcademy
+Subscribe to the YouTube channel `AfterAcademy` for understanding the concepts used in this project:
 
-[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@fifocode)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@afteracad)
 
 ## Contribution
 Please feel free to fork it and open a PR.

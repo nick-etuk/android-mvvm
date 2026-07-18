@@ -1,21 +1,22 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.devtools.ksp)
     alias(libs.plugins.hilt.android)
     id("kotlin-parcelize")
-    alias(libs.plugins.devtools.ksp)
     alias(libs.plugins.google.services)
     alias(libs.plugins.firebase.crashlytics)
+    alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "com.whereismymotivation"
-    compileSdk = 34
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.whereismymotivation"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0.0"
 
@@ -27,7 +28,7 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"http://192.168.1.47:3000/\"")
+            buildConfigField("String", "BASE_URL", "\"http://localhost:3110/\"")
             buildConfigField("String", "API_KEY", "\"1D3F2DD1A5DE725DD4DF1D82BBB37\"")
         }
         release {
@@ -37,24 +38,24 @@ android {
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
-            buildConfigField("String", "BASE_URL", "\"http://192.168.1.5:3000/\"")
+            buildConfigField("String", "BASE_URL", "\"http://localhost:3110/\"")
             buildConfigField("String", "API_KEY", "\"KHTLL24C5AWEB\"")
         }
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = "1.8"
+    kotlin {
+        compilerOptions {
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+            // freeCompilerArgs.addAll("-Xdebug")
+        }
     }
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
     }
     packaging {
         resources {

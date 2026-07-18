@@ -1,6 +1,5 @@
 package com.whereismymotivation.ui.common.snackbar
 
-import androidx.annotation.StringRes
 import dagger.hilt.android.scopes.ActivityRetainedScoped
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -14,7 +13,7 @@ class Messenger @Inject constructor() {
         MutableSharedFlow<Message<String>>(extraBufferCapacity = 1)
 
     private val _messageRes =
-        MutableSharedFlow<Message<@StringRes Int>>(extraBufferCapacity = 1)
+        MutableSharedFlow<Message<Int>>(extraBufferCapacity = 1)
 
     private val _clear =
         MutableSharedFlow<Boolean>(extraBufferCapacity = 1)

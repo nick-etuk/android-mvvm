@@ -30,7 +30,7 @@ object SystemUtils {
                 context.packageName,
                 0
             )
-            pInfo.versionName
+            pInfo.versionName ?: NO_VERSION_NAME
         } catch (e: PackageManager.NameNotFoundException) {
             NO_VERSION_NAME
         }

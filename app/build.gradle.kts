@@ -28,7 +28,7 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"http://localhost:3110/\"")
+            buildConfigField("String", "BASE_URL", "\"http://10.0.2.2:3100/\"")
             buildConfigField("String", "API_KEY", "\"1D3F2DD1A5DE725DD4DF1D82BBB37\"")
         }
         release {
@@ -38,7 +38,7 @@ android {
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
             )
-            buildConfigField("String", "BASE_URL", "\"http://localhost:3110/\"")
+            buildConfigField("String", "BASE_URL", "\"http://localhost:3100/\"")
             buildConfigField("String", "API_KEY", "\"KHTLL24C5AWEB\"")
         }
     }

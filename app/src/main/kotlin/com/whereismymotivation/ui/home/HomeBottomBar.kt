@@ -56,6 +56,13 @@ enum class HomeTab(
         Destination.Home.MyBox.route,
         Destination.Home.MyBox.route,
     ),
+    BOOKS(
+        R.string.menu_books,
+        R.drawable.ic_book_unselected,
+        R.drawable.ic_book_selected,
+        Destination.Home.MyBox.route,
+        Destination.Home.MyBox.route,
+    ),
     SEARCH(
         R.string.menu_search,
         R.drawable.ic_search_unselected,
@@ -135,7 +142,7 @@ private fun HomeBottomBarView(
     }
 }
 
-@Preview("Light")
+//@Preview("Light")
 @Composable
 private fun HomeBottomBarLightPreview() {
     AppTheme {
@@ -147,7 +154,7 @@ private fun HomeBottomBarLightPreview() {
     }
 }
 
-@Preview("Dark")
+//@Preview("Dark")
 @Composable
 private fun HomeBottomBarDarkPreview() {
     AppTheme(dark = true) {

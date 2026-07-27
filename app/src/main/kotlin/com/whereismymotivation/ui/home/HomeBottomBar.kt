@@ -60,8 +60,8 @@ enum class HomeTab(
         R.string.menu_books,
         R.drawable.ic_book_unselected,
         R.drawable.ic_book_selected,
-        Destination.Home.MyBox.route,
-        Destination.Home.MyBox.route,
+        Destination.Home.Books.route,
+        Destination.Home.Books.route,
     ),
     SEARCH(
         R.string.menu_search,

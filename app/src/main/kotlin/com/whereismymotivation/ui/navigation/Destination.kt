@@ -18,6 +18,7 @@ object Destination {
         data object Feed : Screen("home/feed")
         data object Mentors : Screen("home/mentors")
         data object MyBox : Screen("home/my_box")
+        data object Books : Screen("home/books")
         data object Search : DynamicScreen("home/search", "searchMode")
         data object Profile : DynamicScreen("home/profile", "profileTab")
     }
@@ -46,4 +47,3 @@ object Destination {
         fun dynamicDeeplink(param: String) = "$BASE_DEEPLINK_URL/$baseRoute/${param}"
     }
 }
-

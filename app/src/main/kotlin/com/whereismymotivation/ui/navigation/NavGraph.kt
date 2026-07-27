@@ -8,6 +8,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navDeepLink
 import androidx.navigation.navigation
+import com.whereismymotivation.ui.book.Book
+import com.whereismymotivation.ui.book.BookViewModel
 import com.whereismymotivation.ui.content.ContentRedirection
 import com.whereismymotivation.ui.content.ContentViewModel
 import com.whereismymotivation.ui.content.YouTubeContent
@@ -98,6 +100,12 @@ fun NavGraph(
             composable(Destination.Home.Mentors.route) {
                 val viewModel: MentorsViewModel = hiltViewModel(key = MentorsViewModel.TAG)
                 Mentors(modifier, viewModel)
+            }
+
+            // Home.Books
+            composable(Destination.Home.Books.route) {
+                val viewModel: BookViewModel = hiltViewModel(key = BookViewModel.TAG)
+                Book(modifier, viewModel)
             }
 
             // Home.Search
